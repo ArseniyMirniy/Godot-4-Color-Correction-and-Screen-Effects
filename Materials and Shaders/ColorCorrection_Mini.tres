@@ -10,7 +10,7 @@ default_value_enabled = true
 default_value = 4.0
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_fodom"]
-size = Vector2(581, 1068)
+size = Vector2(524, 798)
 title = "Inputs"
 attached_nodes = PackedInt32Array(3, 19, 54, 29, 58, 33)
 
@@ -39,12 +39,12 @@ default_value_enabled = true
 default_value = 1.0
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_y1f3y"]
-size = Vector2(450, 783)
+size = Vector2(444, 618)
 title = "Assemble"
 attached_nodes = PackedInt32Array(59, 60, 53, 55, 56, 57)
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_1c7tu"]
-size = Vector2(564, 541)
+size = Vector2(564, 438)
 title = "Shifting Colors"
 attached_nodes = PackedInt32Array(39, 40, 41, 42)
 
@@ -201,7 +201,6 @@ void fragment() {
 
 }
 "
-graph_offset = Vector2(-1475.87, -159.202)
 modes/cull = 2
 modes/specular = 2
 flags/unshaded = true

@@ -1,9 +1,9 @@
-[gd_scene load_steps=11 format=3 uid="uid://dapdxyg5kfxsy"]
+[gd_scene load_steps=13 format=3 uid="uid://dapdxyg5kfxsy"]
 
 [ext_resource type="Shader" uid="uid://8epkn7ilbvoe" path="res://Materials and Shaders/ColorCorrection_Extra.tres" id="1_i5k41"]
 [ext_resource type="CameraAttributesPhysical" uid="uid://bfs6kljywwebk" path="res://Scenes/Camera.tres" id="2_7m1v7"]
 [ext_resource type="Environment" uid="uid://cw4y1r0ro6ix2" path="res://Materials and Shaders/Env.tres" id="2_u38lu"]
-[ext_resource type="Shader" uid="uid://dbapk0dtj85oy" path="res://Materials and Shaders/ColorCorrection_Mini.tres" id="4_44cfy"]
+[ext_resource type="Shader" uid="uid://c173fdhm1dxxj" path="res://Materials and Shaders/ScreenEffects_Ultimate.tres" id="4_lnv0r"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ar404"]
 render_priority = 0
@@ -22,15 +22,45 @@ shader_parameter/Saturation = 0.8
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_1sxte"]
 render_priority = 0
-shader = ExtResource("4_44cfy")
+shader = ExtResource("4_lnv0r")
+shader_parameter/Sharpen_and_Blur = 1.0
 shader_parameter/Main_ColorTemp = 5000.0
-shader_parameter/Main_Tint = 1.0
+shader_parameter/Dark_ColorTemp = 0.0
+shader_parameter/Main_Tint = 1.15
+shader_parameter/Dark_Tint = 0.0
+shader_parameter/Bright_ColorTemp = 0.0
+shader_parameter/Bright_Tint = 0.0
+shader_parameter/High_Brightness = 1.0
+shader_parameter/Dark_Levels = 0.8
+shader_parameter/HDR_Limit = 4.0
 shader_parameter/Brightness = 1.0
-shader_parameter/Saturation = 1.4
+shader_parameter/Saturation = 1.0
+shader_parameter/Vignette = 0.0
 
 [sub_resource type="QuadMesh" id="QuadMesh_juigl"]
 material = SubResource("ShaderMaterial_1sxte")
 size = Vector2(0.18, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_atnww"]
+render_priority = 0
+shader = ExtResource("4_lnv0r")
+shader_parameter/Sharpen_and_Blur = 1.0
+shader_parameter/Main_ColorTemp = 4180.0
+shader_parameter/Dark_ColorTemp = 0.0
+shader_parameter/Main_Tint = 1.0
+shader_parameter/Dark_Tint = 0.0
+shader_parameter/Bright_ColorTemp = 0.0
+shader_parameter/Bright_Tint = 0.0
+shader_parameter/High_Brightness = 1.0
+shader_parameter/Dark_Levels = 0.8
+shader_parameter/HDR_Limit = 4.0
+shader_parameter/Brightness = 1.4
+shader_parameter/Saturation = 1.0
+shader_parameter/Vignette = 0.8
+
+[sub_resource type="SphereMesh" id="SphereMesh_vvkr3"]
+material = SubResource("ShaderMaterial_atnww")
+flip_faces = true
 
 [sub_resource type="Animation" id="Animation_ijsq7"]
 length = 0.001
@@ -49,7 +79,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_jpcfo"]
 resource_name = "Rotation"
-length = 10.0
+length = 20.0
 loop_mode = 1
 step = 0.02
 tracks/0/type = "value"
@@ -59,7 +89,7 @@ tracks/0/path = NodePath(".:rotation")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 10),
+"times": PackedFloat32Array(0, 20),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
 "values": [Vector3(0, 0, 0), Vector3(0, 6.28144, 0)]
@@ -84,18 +114,24 @@ attributes = ExtResource("2_7m1v7")
 
 [node name="ScreenFilter" type="MeshInstance3D" parent="Camera3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.18, 0, -0.4)
+visible = false
 material_override = SubResource("ShaderMaterial_ar404")
 cast_shadow = 0
 mesh = SubResource("QuadMesh_juigl")
 
 [node name="ScreenFilter2" type="MeshInstance3D" parent="Camera3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.49012e-08, 0, -0.4)
+visible = false
 cast_shadow = 0
 mesh = SubResource("QuadMesh_juigl")
+
+[node name="ScreenFilter3" type="MeshInstance3D" parent="Camera3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.49012e-08, 0, -0.4)
+cast_shadow = 0
+mesh = SubResource("SphereMesh_vvkr3")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 root_node = NodePath("../Camera3D")
 libraries = {
 "": SubResource("AnimationLibrary_qroxu")
 }
-autoplay = "Rotation"
