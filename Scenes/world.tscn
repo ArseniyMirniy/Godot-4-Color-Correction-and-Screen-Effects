@@ -1,8 +1,9 @@
-[gd_scene load_steps=10 format=3 uid="uid://dapdxyg5kfxsy"]
+[gd_scene load_steps=11 format=3 uid="uid://dapdxyg5kfxsy"]
 
 [ext_resource type="Shader" uid="uid://8epkn7ilbvoe" path="res://Materials and Shaders/ColorCorrection_Extra.tres" id="1_i5k41"]
 [ext_resource type="CameraAttributesPhysical" uid="uid://bfs6kljywwebk" path="res://Scenes/Camera.tres" id="2_7m1v7"]
 [ext_resource type="Environment" uid="uid://cw4y1r0ro6ix2" path="res://Materials and Shaders/Env.tres" id="2_u38lu"]
+[ext_resource type="Shader" uid="uid://dbapk0dtj85oy" path="res://Materials and Shaders/ColorCorrection_Mini.tres" id="4_44cfy"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_ar404"]
 render_priority = 0
@@ -21,18 +22,11 @@ shader_parameter/Saturation = 0.8
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_1sxte"]
 render_priority = 0
-shader = ExtResource("1_i5k41")
+shader = ExtResource("4_44cfy")
 shader_parameter/Main_ColorTemp = 5000.0
-shader_parameter/Dark_ColorTemp = 0.0
 shader_parameter/Main_Tint = 1.0
-shader_parameter/Dark_Tint = 0.0
-shader_parameter/Bright_ColorTemp = 0.0
-shader_parameter/Bright_Tint = 0.0
-shader_parameter/High_Brightness = 1.76
-shader_parameter/Dark_Levels = 0.8
-shader_parameter/HDR_Limit = 4.0
 shader_parameter/Brightness = 1.0
-shader_parameter/Saturation = 1.0
+shader_parameter/Saturation = 1.4
 
 [sub_resource type="QuadMesh" id="QuadMesh_juigl"]
 material = SubResource("ShaderMaterial_1sxte")
