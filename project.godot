@@ -1,0 +1,34 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="ColorCorrection"
+run/main_scene="res://Scenes/world.tscn"
+config/features=PackedStringArray("4.3", "Forward Plus")
+run/max_fps=144
+config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
+window/vsync/vsync_mode=2
+
+[physics]
+
+common/physics_interpolation=true
+
+[rendering]
+
+lights_and_shadows/use_physical_light_units=true
+anti_aliasing/quality/msaa_3d=1
+anti_aliasing/quality/screen_space_aa=1
+anti_aliasing/quality/use_debanding=true

@@ -1,0 +1,11 @@
+[gd_resource type="VisualShader" format=3 uid="uid://b1bc7qwkltx6k"]
+
+[resource]
+code = "shader_type canvas_item;
+render_mode blend_mix;
+
+
+
+"
+mode = 1
+flags/light_only = false
