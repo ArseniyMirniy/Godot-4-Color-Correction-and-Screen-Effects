@@ -236,7 +236,7 @@ linked_parent_graph_frame = 2
 parameter_name = "Sharpen_and_Blur"
 hint = 2
 min = -4.0
-max = 8.0
+max = 10.0
 step = 0.01
 default_value_enabled = true
 
@@ -253,7 +253,7 @@ op_type = 3
 
 [sub_resource type="VisualShaderNodeFloatConstant" id="VisualShaderNodeFloatConstant_xfrow"]
 linked_parent_graph_frame = 2
-constant = 3.0
+constant = 2.0
 
 [sub_resource type="VisualShaderNodeFloatOp" id="VisualShaderNodeFloatOp_7ass8"]
 default_input_values = [0, 0.0, 1, 0.1]
@@ -337,7 +337,7 @@ render_mode blend_mix, depth_draw_opaque, cull_disabled, diffuse_lambert, specul
 
 uniform sampler2D screen_tex_frg_3 : hint_screen_texture;
 uniform sampler2D screen_tex_frg_68 : hint_screen_texture;
-uniform float Sharpen_and_Blur : hint_range(-4, 8, 0.00999999977648) = 0;
+uniform float Sharpen_and_Blur : hint_range(-4, 10, 0.00999999977648) = 0;
 uniform float Main_ColorTemp : hint_range(2000, 8000, 5) = 5000;
 uniform float Dark_ColorTemp : hint_range(-1000, 1000, 2) = 0;
 uniform float Main_Tint : hint_range(0, 2, 0.00999999977648) = 1;
@@ -372,7 +372,7 @@ void fragment() {
 
 
 // FloatConstant:70
-	float n_out70p0 = 3.000000;
+	float n_out70p0 = 2.000000;
 
 
 	vec4 n_out68p0;
@@ -622,7 +622,7 @@ void fragment() {
 
 }
 "
-graph_offset = Vector2(-4228.67, -279.333)
+graph_offset = Vector2(-5048.57, -405.315)
 modes/cull = 2
 modes/specular = 2
 flags/unshaded = true
