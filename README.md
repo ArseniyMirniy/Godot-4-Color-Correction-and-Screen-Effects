@@ -1,5 +1,7 @@
 # Godot 4 Color Correction and Screen Effects Visual Shaders
 
+![Godot 4 Color Correction and Screen Effects Visual Shaders](https://github.com/ArseniyMirniy/Godot-4-Free-Color-Correction-and-Screen-Effects-Visual-Shader/blob/main/Extras/Godot_4_Color_Correction_and_Screen_Effects_Visual_Shader.jpg)
+
 ## Description
 
 Color correcting shader graph (visual shader) for Godot 4.3 (may work with other versions too), will probably work with Redot Engine as well.
@@ -14,6 +16,8 @@ Same as Mini, but has also features to tweak Bright and Dark areas separately, s
 
 ### Screen Effects Ultimate
 Same as Extra, but with additional effects, like Sharpening and Blur, Vignette, and Chromatic Aberrations. Please, be very careful with Chromatic Aberrations — it's the easiest way to get motion sickness.
+
+![Godot 4 Color Correction and Screen Effects Visual Shaders](https://github.com/ArseniyMirniy/Godot-4-Free-Color-Correction-and-Screen-Effects-Visual-Shader/blob/main/Extras/Day_to_Night.jpg)
 
 ## License
 
