@@ -61,6 +61,8 @@ shader_parameter/Vignette = 0.0
 [sub_resource type="SphereMesh" id="SphereMesh_vvkr3"]
 material = SubResource("ShaderMaterial_atnww")
 flip_faces = true
+radius = 0.2
+height = 0.4
 
 [sub_resource type="Animation" id="Animation_ijsq7"]
 length = 0.001
@@ -126,7 +128,6 @@ cast_shadow = 0
 mesh = SubResource("QuadMesh_juigl")
 
 [node name="ScreenFilter3" type="MeshInstance3D" parent="Camera3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.49012e-08, 0, -0.4)
 cast_shadow = 0
 mesh = SubResource("SphereMesh_vvkr3")
 
