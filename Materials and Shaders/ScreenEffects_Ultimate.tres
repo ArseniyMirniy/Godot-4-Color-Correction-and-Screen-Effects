@@ -107,7 +107,7 @@ attached_nodes = PackedInt32Array(45, 47, 46, 44)
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_y1f3y"]
 size = Vector2(949, 1519)
 title = "Assemble"
-attached_nodes = PackedInt32Array(48, 27, 53, 55, 56, 57, 60, 59, 66, 74, 75, 76, 79, 78)
+attached_nodes = PackedInt32Array(48, 27, 53, 55, 56, 57, 60, 59, 66, 74, 75, 76, 79, 78, 87)
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_1c7tu"]
 size = Vector2(629, 835)
@@ -668,7 +668,7 @@ void fragment() {
 
 }
 "
-graph_offset = Vector2(-512.771, 14.5841)
+graph_offset = Vector2(-549.85, 39.7378)
 modes/cull = 2
 modes/specular = 2
 flags/unshaded = true

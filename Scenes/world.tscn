@@ -19,6 +19,7 @@ shader_parameter/Dark_Levels = 0.6
 shader_parameter/HDR_Limit = 4.0
 shader_parameter/Brightness = 0.2
 shader_parameter/Saturation = 0.8
+shader_parameter/Vignette = 0.0
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_1sxte"]
 render_priority = 0
@@ -56,7 +57,7 @@ shader_parameter/Dark_Levels = 0.8
 shader_parameter/HDR_Limit = 4.0
 shader_parameter/Brightness = 1.0
 shader_parameter/Saturation = 1.0
-shader_parameter/Vignette = 0.4
+shader_parameter/Vignette = 0.0
 
 [sub_resource type="SphereMesh" id="SphereMesh_vvkr3"]
 material = SubResource("ShaderMaterial_atnww")
@@ -116,18 +117,17 @@ attributes = ExtResource("2_7m1v7")
 
 [node name="ScreenFilter" type="MeshInstance3D" parent="Camera3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.18, 0, -0.4)
-visible = false
 material_override = SubResource("ShaderMaterial_ar404")
 cast_shadow = 0
 mesh = SubResource("QuadMesh_juigl")
 
 [node name="ScreenFilter2" type="MeshInstance3D" parent="Camera3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.49012e-08, 0, -0.4)
-visible = false
 cast_shadow = 0
 mesh = SubResource("QuadMesh_juigl")
 
 [node name="ScreenFilter3" type="MeshInstance3D" parent="Camera3D"]
+visible = false
 cast_shadow = 0
 mesh = SubResource("SphereMesh_vvkr3")
 
