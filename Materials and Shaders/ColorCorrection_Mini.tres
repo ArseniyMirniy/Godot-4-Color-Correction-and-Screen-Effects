@@ -1,7 +1,7 @@
 [gd_resource type="VisualShader" load_steps=27 format=3 uid="uid://dbapk0dtj85oy"]
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_fodom"]
-size = Vector2(821, 1568)
+size = Vector2(709, 1158)
 title = "Inputs"
 attached_nodes = PackedInt32Array(3, 33, 54, 29, 58, 66)
 
@@ -30,12 +30,12 @@ default_value_enabled = true
 default_value = 1.0
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_y1f3y"]
-size = Vector2(909, 1519)
+size = Vector2(909, 1458)
 title = "Assemble"
 attached_nodes = PackedInt32Array(59, 60, 53, 55, 56, 57, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70)
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_1c7tu"]
-size = Vector2(609, 795)
+size = Vector2(609, 638)
 title = "Shifting Colors"
 attached_nodes = PackedInt32Array(39, 40, 41, 42)
 
@@ -61,7 +61,7 @@ linked_parent_graph_frame = 36
 
 [sub_resource type="VisualShaderNodeFloatParameter" id="VisualShaderNodeFloatParameter_j3xbd"]
 linked_parent_graph_frame = 2
-parameter_name = "Brightness"
+parameter_name = "Exposure"
 hint = 2
 max = 2.0
 step = 0.02
@@ -149,7 +149,7 @@ render_mode blend_mix, depth_draw_opaque, cull_disabled, diffuse_lambert, specul
 uniform sampler2D screen_tex_frg_3 : hint_screen_texture;
 uniform float Main_ColorTemp : hint_range(2000, 8000, 5) = 5000;
 uniform float Main_Tint : hint_range(0, 2, 0.00999999977648) = 1;
-uniform float Brightness : hint_range(0, 2, 0.01999999955297) = 1;
+uniform float Exposure : hint_range(0, 2, 0.01999999955297) = 1;
 uniform float Saturation : hint_range(0, 1.39999997615814, 0.01999999955297) = 1;
 uniform sampler2D tex_frg_63;
 uniform float Vignette : hint_range(0, 1.39999997615814, 0.01999999955297) = 0;
@@ -195,7 +195,7 @@ void fragment() {
 
 
 // FloatParameter:54
-	float n_out54p0 = Brightness;
+	float n_out54p0 = Exposure;
 
 
 // VectorOp:55
@@ -289,7 +289,6 @@ void fragment() {
 
 }
 "
-graph_offset = Vector2(-787.245, 22.1422)
 modes/cull = 2
 modes/specular = 2
 flags/unshaded = true
