@@ -34,12 +34,12 @@ shader_parameter/Bright_Tint = 0.0
 shader_parameter/High_Brightness = 1.0
 shader_parameter/Dark_Levels = 0.8
 shader_parameter/HDR_Limit = 4.0
-shader_parameter/Exposure = 0.7
-shader_parameter/Saturation = 1.0
-shader_parameter/Vignette = 0.0
 shader_parameter/Halation_Blur = 4.0
 shader_parameter/Halation_Min = 0.8
 shader_parameter/Halation = 3.0
+shader_parameter/Exposure = 0.7
+shader_parameter/Saturation = 1.0
+shader_parameter/Vignette = 0.0
 
 [sub_resource type="QuadMesh" id="QuadMesh_juigl"]
 material = SubResource("ShaderMaterial_1sxte")
@@ -49,21 +49,21 @@ size = Vector2(0.18, 1)
 render_priority = 0
 shader = ExtResource("4_lnv0r")
 shader_parameter/Sharpen_and_Blur = 0.0
-shader_parameter/Main_ColorTemp = 5925.0
+shader_parameter/Main_ColorTemp = 8000.0
 shader_parameter/Dark_ColorTemp = -66.0
 shader_parameter/Main_Tint = 1.2
 shader_parameter/Dark_Tint = -0.015
 shader_parameter/Bright_ColorTemp = 0.0
 shader_parameter/Bright_Tint = 0.0
-shader_parameter/High_Brightness = 1.0
+shader_parameter/High_Brightness = 0.95
 shader_parameter/Dark_Levels = 0.8
 shader_parameter/HDR_Limit = 4.0
-shader_parameter/Exposure = 1.0
-shader_parameter/Saturation = 1.0
-shader_parameter/Vignette = 0.0
 shader_parameter/Halation_Blur = 4.0
 shader_parameter/Halation_Min = 0.8
 shader_parameter/Halation = 3.0
+shader_parameter/Exposure = 1.0
+shader_parameter/Saturation = 1.0
+shader_parameter/Vignette = 0.4
 
 [sub_resource type="SphereMesh" id="SphereMesh_vvkr3"]
 material = SubResource("ShaderMaterial_atnww")
