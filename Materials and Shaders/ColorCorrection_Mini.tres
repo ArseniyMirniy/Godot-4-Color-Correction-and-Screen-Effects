@@ -1,7 +1,7 @@
 [gd_resource type="VisualShader" load_steps=27 format=3 uid="uid://dbapk0dtj85oy"]
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_fodom"]
-size = Vector2(709, 1158)
+size = Vector2(624, 1118)
 title = "Inputs"
 attached_nodes = PackedInt32Array(3, 33, 54, 29, 58, 66)
 
@@ -30,12 +30,12 @@ default_value_enabled = true
 default_value = 1.0
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_y1f3y"]
-size = Vector2(909, 1458)
+size = Vector2(824, 1418)
 title = "Assemble"
 attached_nodes = PackedInt32Array(59, 60, 53, 55, 56, 57, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70)
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_1c7tu"]
-size = Vector2(609, 638)
+size = Vector2(524, 598)
 title = "Shifting Colors"
 attached_nodes = PackedInt32Array(39, 40, 41, 42)
 

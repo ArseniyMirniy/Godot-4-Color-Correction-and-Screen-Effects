@@ -48,7 +48,7 @@ default_value_enabled = true
 default_value = 4.0
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_fodom"]
-size = Vector2(1621, 2388)
+size = Vector2(1501, 2208)
 title = "Inputs"
 attached_nodes = PackedInt32Array(3, 19, 8, 29, 30, 31, 32, 33, 34, 54, 58, 65, 67, 68, 70, 69, 71, 73, 72, 77, 80, 81)
 
@@ -118,22 +118,22 @@ step = 0.005
 default_value_enabled = true
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_lpjj6"]
-size = Vector2(629, 795)
+size = Vector2(544, 701)
 title = "Shifting Bright"
 attached_nodes = PackedInt32Array(45, 47, 46, 44)
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_y1f3y"]
-size = Vector2(1154, 1459)
+size = Vector2(1070, 1399)
 title = "Assemble"
 attached_nodes = PackedInt32Array(48, 27, 53, 55, 56, 57, 60, 59, 66, 74, 75, 76, 79, 78, 87, 100, 102)
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_1c7tu"]
-size = Vector2(629, 795)
+size = Vector2(544, 701)
 title = "Shifting Colors"
 attached_nodes = PackedInt32Array(39, 40, 41, 42)
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_dbpd5"]
-size = Vector2(629, 795)
+size = Vector2(544, 701)
 title = "Shifting Dark"
 attached_nodes = PackedInt32Array(50, 52, 51, 49)
 
@@ -227,7 +227,7 @@ linked_parent_graph_frame = 36
 operator = 1
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_7i75w"]
-size = Vector2(1174, 367)
+size = Vector2(1090, 255)
 title = "Divide Tones"
 attached_nodes = PackedInt32Array(18, 17, 15, 16, 82)
 
@@ -371,12 +371,12 @@ linked_parent_graph_frame = 86
 op_type = 4
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_bp7pq"]
-size = Vector2(1169, 411)
+size = Vector2(1085, 283)
 title = "Fix Clipping"
 attached_nodes = PackedInt32Array(82, 83, 84, 85)
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_5yhcv"]
-size = Vector2(1534, 1048)
+size = Vector2(1450, 915)
 title = "Halation"
 attached_nodes = PackedInt32Array(88, 89, 90, 91, 92, 93, 95, 101, 98, 94, 99)
 
@@ -812,7 +812,7 @@ void fragment() {
 
 }
 "
-graph_offset = Vector2(-897.294, -411.822)
+graph_offset = Vector2(-1067.62, -244.131)
 modes/cull = 2
 modes/specular = 2
 flags/unshaded = true
