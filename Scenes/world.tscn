@@ -56,7 +56,7 @@ shader_parameter/Dark_Levels = 0.8
 shader_parameter/HDR_Limit = 4.0
 shader_parameter/Brightness = 1.0
 shader_parameter/Saturation = 1.0
-shader_parameter/Vignette = 0.38
+shader_parameter/Vignette = 0.4
 
 [sub_resource type="SphereMesh" id="SphereMesh_vvkr3"]
 material = SubResource("ShaderMaterial_atnww")
@@ -94,7 +94,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 20),
 "transitions": PackedFloat32Array(1, 1),
 "update": 0,
-"values": [Vector3(0, 0, 0), Vector3(0, 6.28144, 0)]
+"values": [Vector3(0, 2.70526, 0), Vector3(0, 8.98495, 0)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_qroxu"]
