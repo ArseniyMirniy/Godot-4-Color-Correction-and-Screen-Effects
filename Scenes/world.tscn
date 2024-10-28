@@ -18,7 +18,7 @@ shader_parameter/High_Brightness = 1.0
 shader_parameter/HDR_Limit = 4.0
 shader_parameter/Exposure = 0.2
 shader_parameter/Saturation = 0.8
-shader_parameter/Vignette = 0.0
+shader_parameter/Vignette = 0.4
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_1sxte"]
 render_priority = 0
@@ -39,7 +39,7 @@ shader_parameter/Halation_Min = 0.8
 shader_parameter/Halation = 3.0
 shader_parameter/Exposure = 0.7
 shader_parameter/Saturation = 1.0
-shader_parameter/Vignette = 0.0
+shader_parameter/Vignette = 0.4
 
 [sub_resource type="QuadMesh" id="QuadMesh_juigl"]
 material = SubResource("ShaderMaterial_1sxte")
