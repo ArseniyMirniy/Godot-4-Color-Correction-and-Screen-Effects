@@ -23,7 +23,9 @@ shader_parameter/Vignette = 0.0
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_1sxte"]
 render_priority = 0
 shader = ExtResource("4_lnv0r")
+shader_parameter/Blur_Oversize = 1.0
 shader_parameter/Sharpen_and_Blur = 1.0
+shader_parameter/Chromatic_Aberrations = 0.0
 shader_parameter/Main_ColorTemp = 5000.0
 shader_parameter/Dark_ColorTemp = 0.0
 shader_parameter/Main_Tint = 1.15
@@ -46,7 +48,9 @@ size = Vector2(0.18, 1)
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_atnww"]
 render_priority = 0
 shader = ExtResource("4_lnv0r")
-shader_parameter/Sharpen_and_Blur = 0.0
+shader_parameter/Blur_Oversize = 1.0
+shader_parameter/Sharpen_and_Blur = -1.0
+shader_parameter/Chromatic_Aberrations = 0.4
 shader_parameter/Main_ColorTemp = 6500.0
 shader_parameter/Dark_ColorTemp = -66.0
 shader_parameter/Main_Tint = 1.2

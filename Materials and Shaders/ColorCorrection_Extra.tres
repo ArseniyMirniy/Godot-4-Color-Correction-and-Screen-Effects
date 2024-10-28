@@ -30,7 +30,7 @@ default_value_enabled = true
 default_value = 4.0
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_fodom"]
-size = Vector2(1201, 2488)
+size = Vector2(1109, 2078)
 title = "Inputs"
 attached_nodes = PackedInt32Array(3, 19, 8, 29, 30, 31, 32, 33, 34, 54, 58, 65, 72)
 
@@ -100,22 +100,22 @@ step = 0.005
 default_value_enabled = true
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_lpjj6"]
-size = Vector2(629, 795)
+size = Vector2(629, 638)
 title = "Shifting Bright"
 attached_nodes = PackedInt32Array(45, 47, 46, 44)
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_y1f3y"]
-size = Vector2(849, 1679)
+size = Vector2(849, 1618)
 title = "Assemble"
 attached_nodes = PackedInt32Array(48, 27, 53, 55, 56, 57, 60, 59, 66, 67, 68, 69, 70, 71)
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_1c7tu"]
-size = Vector2(629, 795)
+size = Vector2(629, 638)
 title = "Shifting Colors"
 attached_nodes = PackedInt32Array(39, 40, 41, 42)
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_dbpd5"]
-size = Vector2(629, 795)
+size = Vector2(629, 638)
 title = "Shifting Dark"
 attached_nodes = PackedInt32Array(50, 52, 51, 49)
 
@@ -209,7 +209,7 @@ linked_parent_graph_frame = 36
 operator = 1
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_7i75w"]
-size = Vector2(1114, 367)
+size = Vector2(1109, 158)
 title = "Divide Tones"
 attached_nodes = PackedInt32Array(18, 17, 15, 16)
 
@@ -522,7 +522,6 @@ void fragment() {
 
 }
 "
-graph_offset = Vector2(-2319.25, -389.346)
 modes/cull = 2
 modes/specular = 2
 flags/unshaded = true
