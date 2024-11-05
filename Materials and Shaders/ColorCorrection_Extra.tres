@@ -105,7 +105,7 @@ title = "Shifting Bright"
 attached_nodes = PackedInt32Array(45, 47, 46, 44)
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_y1f3y"]
-size = Vector2(849, 1618)
+size = Vector2(1109, 1618)
 title = "Assemble"
 attached_nodes = PackedInt32Array(48, 27, 53, 55, 56, 57, 60, 59, 66, 67, 68, 69, 70, 71)
 
@@ -278,7 +278,7 @@ constant = 0.8
 
 [resource]
 code = "shader_type spatial;
-render_mode blend_mix, depth_draw_opaque, cull_disabled, diffuse_lambert, specular_disabled, unshaded, shadows_disabled;
+render_mode blend_mix, depth_draw_never, cull_disabled, diffuse_lambert, specular_disabled, unshaded, shadows_disabled;
 
 uniform sampler2D screen_tex_frg_3 : hint_screen_texture;
 uniform float Main_ColorTemp : hint_range(2000, 8000, 5) = 5000;
@@ -522,6 +522,7 @@ void fragment() {
 
 }
 "
+modes/depth_draw = 2
 modes/cull = 2
 modes/specular = 2
 flags/unshaded = true
@@ -620,7 +621,7 @@ nodes/fragment/68/position = Vector2(-820, 1180)
 nodes/fragment/69/node = SubResource("VisualShaderNodeTexture_p26sr")
 nodes/fragment/69/position = Vector2(-500, 1100)
 nodes/fragment/70/node = SubResource("VisualShaderNodeMix_mx0rh")
-nodes/fragment/70/position = Vector2(-440, 760)
+nodes/fragment/70/position = Vector2(-180, 720)
 nodes/fragment/71/node = SubResource("VisualShaderNodeColorOp_esfb7")
 nodes/fragment/71/position = Vector2(-440, 520)
 nodes/fragment/72/node = SubResource("VisualShaderNodeFloatParameter_bhg82")

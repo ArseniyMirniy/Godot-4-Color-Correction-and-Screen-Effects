@@ -13,14 +13,13 @@ config_version=5
 config/name="ColorCorrection"
 run/main_scene="res://Scenes/world.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
-run/max_fps=144
 config/icon="res://icon.svg"
 
 [display]
 
 window/size/viewport_width=1920
 window/size/viewport_height=1080
-window/vsync/vsync_mode=2
+window/size/initial_position_type=2
 
 [physics]
 
