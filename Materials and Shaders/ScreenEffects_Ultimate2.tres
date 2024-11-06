@@ -39,6 +39,7 @@ input_name = "screen_pixel_size"
 linked_parent_graph_frame = 108
 parameter_name = "Pixelation_Sacle"
 hint = 2
+min = 1.0
 max = 100.0
 default_value_enabled = true
 default_value = 1.0
@@ -447,7 +448,7 @@ render_mode blend_mix;
 
 uniform bool Blur = false;
 uniform bool Pixelation = false;
-uniform float Pixelation_Sacle : hint_range(0, 100, 0.10000000149012) = 1;
+uniform float Pixelation_Sacle : hint_range(1, 100, 0.10000000149012) = 1;
 uniform sampler2D screen_tex_frg_2 : hint_screen_texture;
 uniform sampler2D screen_tex_frg_79 : hint_screen_texture;
 uniform sampler2D screen_tex_frg_78 : hint_screen_texture;
@@ -828,7 +829,7 @@ void fragment() {
 
 }
 "
-graph_offset = Vector2(-3862.12, 46.1394)
+graph_offset = Vector2(-3465.19, 43.4518)
 mode = 1
 flags/light_only = false
 nodes/fragment/0/position = Vector2(2800, 200)
