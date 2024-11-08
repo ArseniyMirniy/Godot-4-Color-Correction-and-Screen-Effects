@@ -9,12 +9,12 @@ Color correcting shader graph (visual shader) for Godot 4.3 (may work with other
 There are two branches: ColorCorrection Mini and Screen Effects Ultimate. Mini only has basic tools, but is very lightweight and can be used without any noticeable performance costs on any platform. Color correction works similar to video editing software and is fully compatible with basic environment and camera features of Godot Engine.
 
 ## Installation
-1.Make a camera
+1. Make a camera
 2. Add CanvasLayer node as a child of the camera
 3. Add ColorRect node as the child of the CanvasLayer
 4. Make ColorRect full-screen in node settings: Layout, Anchors Preset, Full Rect.
-5. Add shader to ColorRect Materials
-6. Change values to setup (only visible in runtime, not within the editor)
+5. Add shader (MINI or ULTIMATE) to ColorRect Material slot
+7. Change values to setup (only visible in runtime, not within the editor) 
 
 ### ColorCorrection Mini
 Tune color temperature, brightness, saturation, and green tint of the whole image. With this simple and fast shader you can easily make the game feel colder, warmer, or more dangerous (like on icy mountains, hot volcano, or poisoned swamps respectively).
@@ -23,14 +23,23 @@ Tune color temperature, brightness, saturation, and green tint of the whole imag
 A heavy but reliable shader with tons of effects and features. It should run well on any modern system: effects are optimized, sampling is very limited, and all heavy features have on/off toggles.
 
 Global:
+
 • Blur and Sharpening
+
 • Pixelation (scalable)
+
 • Chromatic Aberrations
+
 • Bloom booster
+
 • Halation
+
 • Vignette 
+
 • Saturation
+
 • Color Filter
+
 
 MAIN + Shadows, Midtones, Highlights:
 • Color Temperature
