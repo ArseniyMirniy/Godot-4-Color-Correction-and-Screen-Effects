@@ -27,6 +27,7 @@ shader_parameter/Chromatic_Aberrations = false
 shader_parameter/Pixelation = false
 shader_parameter/Pixelation_Scale = 1.0
 shader_parameter/Chromatic_Scale = 0.0
+shader_parameter/Chromatic_Darkening = 0.6
 shader_parameter/Blur_Amount = 0.0
 shader_parameter/Shadows_Split = 0.3
 shader_parameter/Shadow_Color_Temp = 0.0
