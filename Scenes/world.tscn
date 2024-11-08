@@ -2,7 +2,7 @@
 
 [ext_resource type="CameraAttributesPhysical" uid="uid://bfs6kljywwebk" path="res://Scenes/Camera.tres" id="2_7m1v7"]
 [ext_resource type="Environment" uid="uid://cw4y1r0ro6ix2" path="res://Materials and Shaders/Env.tres" id="2_u38lu"]
-[ext_resource type="Shader" uid="uid://dbapk0dtj85oy" path="res://Materials and Shaders/ColorCorrection_Mini.tres" id="3_y7xlv"]
+[ext_resource type="Shader" uid="uid://b5ptog53u0l54" path="res://Materials and Shaders/ScreenEffects_Ultimate.tres" id="3_3b5kk"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_04om4"]
 albedo_color = Color(0.097034, 0.148783, 0.10005, 1)
@@ -20,8 +20,32 @@ albedo_color = Color(0.812743, 0.247402, 0, 1)
 material = SubResource("StandardMaterial3D_gjgnq")
 size = Vector3(0.2, 0.4, 0.2)
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_n07t7"]
-shader = ExtResource("3_y7xlv")
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_erhrt"]
+shader = ExtResource("3_3b5kk")
+shader_parameter/Bloom = false
+shader_parameter/Blur = false
+shader_parameter/Chromatic_Aberrations = false
+shader_parameter/Pixelation = false
+shader_parameter/Pixelation_Scale = 1.0
+shader_parameter/Chromatic_Scale = 0.0
+shader_parameter/Chromatic_Darkening = 0.6
+shader_parameter/Blur_Amount = 0.0
+shader_parameter/Bloom_Intensity = 0.0
+shader_parameter/Bloom_Halation = 0.0
+shader_parameter/Shadows_Split = 0.3
+shader_parameter/Shadow_Color_Temp = 0.0
+shader_parameter/Shadow_Green_Tint = 0.0
+shader_parameter/Shadow_Brightness = 1.0
+shader_parameter/Shadow_Contrast = 1.0
+shader_parameter/Highlights_Split = 0.7
+shader_parameter/Mid_Color_Temp = 0.0
+shader_parameter/Mid_Green_Tint = 0.0
+shader_parameter/Mid_Brightness = 1.0
+shader_parameter/Mid_Contrast = 1.0
+shader_parameter/High_Color_Temp = 0.0
+shader_parameter/High_Green_Tint = 0.0
+shader_parameter/High_Brightness = 1.0
+shader_parameter/High_Contrast = 1.0
 shader_parameter/Main_Color_Temp = 4500.0
 shader_parameter/Main_Green_Tint = 0.0
 shader_parameter/Main_Brightness = 1.0
@@ -76,18 +100,8 @@ attributes = ExtResource("2_7m1v7")
 [node name="CanvasLayer" type="CanvasLayer" parent="Camera3D"]
 
 [node name="ColorRect_ULT" type="ColorRect" parent="Camera3D/CanvasLayer"]
-visible = false
 texture_repeat = 3
-material = SubResource("ShaderMaterial_n07t7")
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="ColorRect_MINI" type="ColorRect" parent="Camera3D/CanvasLayer"]
-texture_repeat = 3
-material = SubResource("ShaderMaterial_n07t7")
+material = SubResource("ShaderMaterial_erhrt")
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
