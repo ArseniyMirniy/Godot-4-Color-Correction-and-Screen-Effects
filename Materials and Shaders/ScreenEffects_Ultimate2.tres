@@ -37,7 +37,7 @@ input_name = "screen_pixel_size"
 
 [sub_resource type="VisualShaderNodeFloatParameter" id="VisualShaderNodeFloatParameter_4d8ya"]
 linked_parent_graph_frame = 108
-parameter_name = "Pixelation_Sacle"
+parameter_name = "Pixelation_Scale"
 hint = 2
 min = 1.0
 max = 100.0
@@ -980,7 +980,7 @@ render_mode blend_mix;
 uniform bool Blur = false;
 uniform bool Chromatic_Aberrations = false;
 uniform bool Pixelation = false;
-uniform float Pixelation_Sacle : hint_range(1, 100, 0.10000000149012) = 1;
+uniform float Pixelation_Scale : hint_range(1, 100, 0.10000000149012) = 1;
 uniform float Chromatic_Scale : hint_range(0, 10, 0.10000000149012) = 0;
 uniform sampler2D screen_tex_frg_125 : hint_screen_texture;
 uniform sampler2D screen_tex_frg_2 : hint_screen_texture;
@@ -1043,7 +1043,7 @@ void fragment() {
 
 
 // FloatParameter:107
-	float n_out107p0 = Pixelation_Sacle;
+	float n_out107p0 = Pixelation_Scale;
 
 
 // FloatOp:116
@@ -1798,7 +1798,7 @@ void fragment() {
 
 }
 "
-graph_offset = Vector2(244.721, -94.1691)
+graph_offset = Vector2(441.415, -54.1379)
 mode = 1
 flags/light_only = false
 nodes/fragment/0/position = Vector2(9560, 460)
