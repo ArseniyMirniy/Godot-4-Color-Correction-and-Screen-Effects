@@ -9,12 +9,15 @@ Color correcting shader graph (visual shader) for Godot 4.3 (may work with other
 There are two branches: ColorCorrection Mini and Screen Effects Ultimate. Mini only has basic tools, but is very lightweight and can be used without any noticeable performance costs on any platform. Color correction works similar to video editing software and is fully compatible with basic environment and camera features of Godot Engine.
 
 ## Installation
-1. Make a camera
-2. Add CanvasLayer node as a child of the camera
-3. Add ColorRect node as the child of the CanvasLayer
-4. Make ColorRect full-screen in node settings: Layout, Anchors Preset, Full Rect.
-5. Add shader (MINI or ULTIMATE) to ColorRect Material slot
-7. Change values to setup (only visible in runtime, not within the editor) 
+1. Download Relese or use ColorCorrection_Mini and ScreenEffects_Ultimate files from source
+2. Download Textures folder as well
+3. Place them in your project
+4. Make a camera in your 2D or 3D scene
+5. Add CanvasLayer node as a child of the camera
+6. Add ColorRect node as the child of the CanvasLayer
+7. Make ColorRect full-screen in node settings: Layout, Anchors Preset, Full Rect.
+8. Add shader (MINI or ULTIMATE) to ColorRect Material slot
+9. Change values to setup (only visible in runtime, not within the editor) 
 
 ### ColorCorrection Mini
 Tune color temperature, brightness, saturation, and green tint of the whole image. With this simple and fast shader you can easily make the game feel colder, warmer, or more dangerous (like on icy mountains, hot volcano, or poisoned swamps respectively).
@@ -22,7 +25,7 @@ Tune color temperature, brightness, saturation, and green tint of the whole imag
 ### Screen Effects Ultimate
 A heavy but reliable shader with tons of effects and features. It should run well on any modern system: effects are optimized, sampling is very limited, and all heavy features have on/off toggles.
 
-Global:
+**Global:**
 
 • Blur and Sharpening
 
@@ -41,15 +44,22 @@ Global:
 • Color Filter
 
 
-MAIN + Shadows, Midtones, Highlights:
+**MAIN + Shadows, Midtones, Highlights:**
+
 • Color Temperature
+
 • Green Tint
+
 • Brightness
+
 • Contrast
 
-WIP:
+**WIP:**
+
 • Lense Flares (Anamorphic)
+
 • Film Grain (Physically Correct)
+
 • Screen Warp Effects
 
 ![Godot 4 Color Correction and Screen Effects Visual Shaders](https://github.com/ArseniyMirniy/Godot-4-Free-Color-Correction-and-Screen-Effects-Visual-Shader/blob/main/Extras/Day_to_Night.jpg)
