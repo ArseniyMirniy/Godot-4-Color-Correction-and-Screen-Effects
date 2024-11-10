@@ -37,15 +37,21 @@ shader_parameter/Shadow_Color_Temp = 0.0
 shader_parameter/Shadow_Green_Tint = 0.0
 shader_parameter/Shadow_Brightness = 1.0
 shader_parameter/Shadow_Contrast = 1.0
+shader_parameter/Shadows_Saturation = 1.0
+shader_parameter/Shadows_Color_Filter = Color(1, 1, 1, 1)
 shader_parameter/Highlights_Split = 0.7
 shader_parameter/Mid_Color_Temp = 0.0
 shader_parameter/Mid_Green_Tint = 0.0
 shader_parameter/Mid_Brightness = 1.0
 shader_parameter/Mid_Contrast = 1.0
+shader_parameter/Mid_Saturation = 1.0
+shader_parameter/Mid_Color_Filter = Color(1, 1, 1, 1)
 shader_parameter/High_Color_Temp = 0.0
 shader_parameter/High_Green_Tint = 0.0
 shader_parameter/High_Brightness = 1.0
 shader_parameter/High_Contrast = 1.0
+shader_parameter/High_Saturation = 1.0
+shader_parameter/High_Color_Filter = Color(1, 1, 1, 1)
 shader_parameter/Main_Color_Temp = 4500.0
 shader_parameter/Main_Green_Tint = 0.0
 shader_parameter/Main_Brightness = 1.0
@@ -113,4 +119,3 @@ root_node = NodePath("../Camera3D")
 libraries = {
 "": SubResource("AnimationLibrary_qroxu")
 }
-autoplay = "Rotation"
