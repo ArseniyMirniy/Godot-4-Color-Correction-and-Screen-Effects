@@ -9,9 +9,8 @@ Color correcting shader graph (visual shader) for Godot 4.3 (may work with other
 There are two branches: ColorCorrection Mini and Screen Effects Ultimate. Mini only has basic tools, but is very lightweight and can be used without any noticeable performance costs on any platform. Color correction works similar to video editing software and is fully compatible with basic environment and camera features of Godot Engine.
 
 ## Installation
-1. Download Relese or use ColorCorrection_Mini and ScreenEffects_Ultimate files from source
-2. Download Textures folder as well
-3. Place them in your project
+1. Download the most recent Release folder and place it to your project
+2. From source use ColorCorrection_Mini, ScreenEffects_Ultimate + Gradient Texture
 4. Make a camera in your 2D or 3D scene
 5. Add CanvasLayer node as a child of the camera
 6. Add ColorRect node as the child of the CanvasLayer
@@ -20,10 +19,10 @@ There are two branches: ColorCorrection Mini and Screen Effects Ultimate. Mini o
 9. Change values to setup (only visible in runtime, not within the editor) 
 
 ### ColorCorrection Mini
-Tune color temperature, brightness, saturation, and green tint of the whole image. With this simple and fast shader you can easily make the game feel colder, warmer, or more dangerous (like on icy mountains, hot volcano, or poisoned swamps respectively).
+Tune color temperature, brightness, contrast, saturation, and green tint of the whole image. Apply vignette, if needed. With this simple and fast shader you can easily make the game feel colder, warmer, or more dangerous (like on icy mountains, hot volcano, or poisoned swamps respectively).
 
 ### Screen Effects Ultimate
-A heavy but reliable shader with tons of effects and features. It should run well on any modern system: effects are optimized, sampling is very limited, and all heavy features have on/off toggles.
+A heavy but reliable shader with tons of effects and features. It should run well on any modern system: effects are optimized, sampling is very limited, and all heavy features have on/off toggles. Blurring passes for bloom and overall blur-sharpening are the same. Pixelation is applied to everything, including the vignette and bloom.
 
 **Global:**
 
