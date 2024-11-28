@@ -22,8 +22,8 @@ size = Vector3(0.2, 0.4, 0.2)
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_erhrt"]
 shader = ExtResource("3_3b5kk")
-shader_parameter/Bloom = false
-shader_parameter/Blur = false
+shader_parameter/Bloom_Booster = false
+shader_parameter/Blur_or_Sharpen = false
 shader_parameter/Chromatic_Aberrations = false
 shader_parameter/Pixelation = false
 shader_parameter/Pixelation_Scale = 1.0
