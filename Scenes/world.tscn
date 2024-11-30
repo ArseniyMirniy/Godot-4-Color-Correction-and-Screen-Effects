@@ -59,6 +59,7 @@ shader_parameter/Main_Contrast = 1.0
 shader_parameter/Main_Saturation = 1.0
 shader_parameter/Vignette = 0.0
 shader_parameter/Color_Filter = Color(1, 1, 1, 1)
+shader_parameter/Posterization = 0.0
 
 [sub_resource type="Animation" id="Animation_jpcfo"]
 resource_name = "Rotation"
@@ -119,3 +120,4 @@ root_node = NodePath("../Camera3D")
 libraries = {
 "": SubResource("AnimationLibrary_qroxu")
 }
+autoplay = "Rotation"
