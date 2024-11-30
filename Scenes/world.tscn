@@ -29,7 +29,7 @@ shader_parameter/Pixelation = false
 shader_parameter/Pixelation_Scale = 1.0
 shader_parameter/Chromatic_Scale = 0.0
 shader_parameter/Chromatic_Darkening = 0.6
-shader_parameter/Blur_Amount = 0.0
+shader_parameter/Blur_Amount = 10.0
 shader_parameter/Bloom_Intensity = 0.0
 shader_parameter/Bloom_Halation = 0.0
 shader_parameter/Shadows_Split = 0.3
@@ -120,4 +120,3 @@ root_node = NodePath("../Camera3D")
 libraries = {
 "": SubResource("AnimationLibrary_qroxu")
 }
-autoplay = "Rotation"
