@@ -22,7 +22,10 @@ There are two branches: ColorCorrection Mini and Screen Effects Ultimate. Mini o
 Tune color temperature, brightness, contrast, saturation, and green tint of the whole image. Apply vignette, if needed. With this simple and fast shader you can easily make the game feel colder, warmer, or more dangerous (like on icy mountains, hot volcano, or poisoned swamps respectively).
 
 ### Screen Effects Ultimate
-A heavy but reliable shader with tons of effects and features. It should run well on any modern system: effects are optimized, sampling is very limited (usually at 5-8 samples per effect). Blurring passes for bloom and overall blur-sharpening are the same. Pixelation is applied to everything, including the vignette and bloom.
+
+![Godot 4 Panini Projection](https://github.com/ArseniyMirniy/Godot-4-Color-Correction-and-Screen-Effects/blob/main/Extras/Panini.gif)
+
+A heavy but reliable shader with tons of effects and features. It should run well on any modern system: effects are optimized, sampling is very limited (usually at 5–8 samples per effect). Blurring passes for bloom and overall blur-sharpening are the same. Pixelation is applied to everything, including the vignette and bloom. The goal of this shader is to be universal and cover the majority of use cases, but even the most aggressive effects, like chromatic aberrations, are safe by default and applied properly.
 
 **Global:**
 
@@ -64,8 +67,6 @@ A heavy but reliable shader with tons of effects and features. It should run wel
 • Film Grain (Physically Correct)
 
 • Screen Warp Effects
-
-[![Godot 4 Panini Projection](https://github.com/ArseniyMirniy/Godot-4-Color-Correction-and-Screen-Effects/blob/main/Extras/Panini.jpg)](https://github.com/ArseniyMirniy/Godot-4-Color-Correction-and-Screen-Effects/blob/main/Extras/Color_Panini_HD.mp4)
 
 ![Godot 4 Color Correction and Screen Effects Visual Shaders](https://github.com/ArseniyMirniy/Godot-4-Free-Color-Correction-and-Screen-Effects-Visual-Shader/blob/main/Extras/Day_to_Night.jpg)
 
