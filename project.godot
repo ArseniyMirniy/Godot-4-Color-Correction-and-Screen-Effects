@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="ColorCorrection"
-run/main_scene="res://Scenes/world.tscn"
+run/main_scene="res://Scenes/Interior_TEST.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
