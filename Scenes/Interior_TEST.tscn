@@ -27,12 +27,12 @@ size = Vector3(0.2, 0.4, 0.2)
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_erhrt"]
 shader = ExtResource("3_tf8gd")
 shader_parameter/Pixelation_Scale = 1.0
-shader_parameter/Panini = 0.0
+shader_parameter/Panini = 0.2
 shader_parameter/Chromatic_Peripheral = 0.9
-shader_parameter/Chromatic_Scale = 0.0
+shader_parameter/Chromatic_Scale = 3.0
 shader_parameter/Chromatic_Darkening = 0.9
-shader_parameter/Blur_Amount = 0.0
-shader_parameter/Blur_Centered = 0.0
+shader_parameter/Blur_Amount = -2.0
+shader_parameter/Blur_Centered = 1.0
 shader_parameter/Shadows_Split = 0.3
 shader_parameter/Shadow_Color_Temp = 0.0
 shader_parameter/Shadow_Green_Tint = 0.0
