@@ -17,8 +17,8 @@ height = 0.3
 albedo_color = Color(0.812743, 0.247402, 0, 1)
 emission_enabled = true
 emission = Color(1, 0.72, 0.72, 1)
-emission_energy_multiplier = 4.73
-emission_intensity = 77613.6
+emission_energy_multiplier = 20.0
+emission_intensity = 5000.0
 
 [sub_resource type="BoxMesh" id="BoxMesh_8obbj"]
 material = SubResource("StandardMaterial3D_gjgnq")
@@ -27,12 +27,16 @@ size = Vector3(0.2, 0.4, 0.2)
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_erhrt"]
 shader = ExtResource("3_tf8gd")
 shader_parameter/Pixelation_Scale = 1.0
-shader_parameter/Panini = 0.3
-shader_parameter/Chromatic_Peripheral = 0.9
-shader_parameter/Chromatic_Scale = 3.0
-shader_parameter/Chromatic_Darkening = 0.9
+shader_parameter/Panini = 0.25
+shader_parameter/Chromatic_Peripheral = 1.0
+shader_parameter/Chromatic_Scale = 5.0
+shader_parameter/Chromatic_Darkening = 1.0
 shader_parameter/Blur_Amount = -2.0
 shader_parameter/Blur_Centered = 1.0
+shader_parameter/Bloom_Starts = 0.8
+shader_parameter/Bloom_Chromatic = 0.0
+shader_parameter/Bloom_Halation = 0.5
+shader_parameter/Bloom_Booster = 0.5
 shader_parameter/Shadows_Split = 0.3
 shader_parameter/Shadow_Color_Temp = 0.0
 shader_parameter/Shadow_Green_Tint = 0.0
@@ -58,7 +62,7 @@ shader_parameter/Main_Green_Tint = 0.0
 shader_parameter/Main_Brightness = 1.0
 shader_parameter/Main_Contrast = 1.0
 shader_parameter/Main_Saturation = 1.0
-shader_parameter/Vignette = 0.0
+shader_parameter/Vignette = 0.3
 shader_parameter/Color_Filter = Color(1, 1, 1, 1)
 shader_parameter/Posterization = 0.0
 
