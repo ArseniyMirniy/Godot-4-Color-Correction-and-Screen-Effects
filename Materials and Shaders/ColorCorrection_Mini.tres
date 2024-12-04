@@ -56,7 +56,6 @@ parameter_name = "Main_Green_Tint"
 hint = 2
 min = -100.0
 max = 100.0
-step = 0.5
 default_value_enabled = true
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_0aqq5"]
@@ -177,7 +176,7 @@ render_mode blend_mix;
 
 uniform sampler2D screen_tex_frg_253 : hint_screen_texture;
 uniform float Main_Color_Temp : hint_range(1000, 8000, 0.5) = 4500;
-uniform float Main_Green_Tint : hint_range(-100, 100, 0.5) = 0;
+uniform float Main_Green_Tint : hint_range(-100, 100, 0.10000000149012) = 0;
 uniform float Main_Brightness : hint_range(0, 2, 0.10000000149012) = 1;
 uniform float Main_Contrast : hint_range(0.10000000149012, 2, 0.10000000149012) = 1;
 uniform float Main_Saturation : hint_range(0, 2, 0.10000000149012) = 1;
@@ -325,7 +324,7 @@ void fragment() {
 
 }
 "
-graph_offset = Vector2(-2489.29, 104.04)
+graph_offset = Vector2(-826.047, -169.429)
 mode = 1
 flags/light_only = false
 nodes/fragment/0/position = Vector2(0, 0)
