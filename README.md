@@ -72,7 +72,7 @@ A heavy but reliable shader with tons of effects and features. It should run wel
 
 ## License
 
-Unique files are provided under Creative Commons Attribution license. You need to clearly mention Arseniy Mirniy as the author and provide the link to this repository.
+Unique shader files are provided under Creative Commons Attribution license. You need to clearly mention Arseniy Mirniy as the author and provide the link to this repository.
 
 [![CC BY 4.0][cc-by-shield]][cc-by]
 
@@ -81,6 +81,8 @@ Unique files are provided under Creative Commons Attribution license. You need t
 [cc-by]: http://creativecommons.org/licenses/by/4.0/
 [cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
 [cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
+
+⚠️ Godot Icon (used as the project icon originally) and GameUnion.TV logo (part of the current icon) are licensed under other terms and can't be redistributed freely.
 
 ## Extra credits
 
