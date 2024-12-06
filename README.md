@@ -72,7 +72,7 @@ A heavy but reliable shader with tons of effects and features. It should run wel
 
 ## License
 
-Unique shader files are provided under Creative Commons Attribution license. You need to clearly mention Arseniy Mirniy as the author and provide the link to this repository.
+Unique files (shaders, scenes, and custom textures) are provided under Creative Commons Attribution license. You need to clearly mention Arseniy Mirniy as the author and provide the link to this repository. You are free to use these shaders, scenes, and textures in any projects, including commercial ones.
 
 [![CC BY 4.0][cc-by-shield]][cc-by]
 
