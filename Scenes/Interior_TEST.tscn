@@ -111,7 +111,6 @@ attributes = ExtResource("2_658e4")
 [node name="CanvasLayer" type="CanvasLayer" parent="Camera3D"]
 
 [node name="ColorRect_ULT" type="ColorRect" parent="Camera3D/CanvasLayer"]
-visible = false
 texture_repeat = 2
 material = SubResource("ShaderMaterial_erhrt")
 anchors_preset = 15
