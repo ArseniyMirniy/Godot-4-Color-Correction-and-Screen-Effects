@@ -1,8 +1,9 @@
-[gd_scene load_steps=11 format=3 uid="uid://cmykjg5k0ufa7"]
+[gd_scene load_steps=13 format=3 uid="uid://cmykjg5k0ufa7"]
 
 [ext_resource type="Environment" uid="uid://cw4y1r0ro6ix2" path="res://Materials and Shaders/Env.tres" id="1_m75cb"]
 [ext_resource type="CameraAttributesPhysical" uid="uid://bfs6kljywwebk" path="res://Scenes/Camera.tres" id="2_658e4"]
 [ext_resource type="Shader" uid="uid://b5ptog53u0l54" path="res://Materials and Shaders/ScreenEffects_Ultimate.tres" id="3_tf8gd"]
+[ext_resource type="Texture2D" uid="uid://bnn45uwfynrl5" path="res://Textures/noise_texture.tres" id="4_kqp25"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_04om4"]
 albedo_color = Color(0.097034, 0.148783, 0.10005, 1)
@@ -13,28 +14,30 @@ material = SubResource("StandardMaterial3D_04om4")
 radius = 2.0
 height = 0.3
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gjgnq"]
-albedo_color = Color(0.812743, 0.247402, 0, 1)
-emission_enabled = true
-emission = Color(1, 0.72, 0.72, 1)
-emission_energy_multiplier = 20.0
-emission_intensity = 5000.0
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qtfam"]
+albedo_color = Color(0.33, 0.17523, 0.1089, 1)
 
 [sub_resource type="BoxMesh" id="BoxMesh_8obbj"]
-material = SubResource("StandardMaterial3D_gjgnq")
+material = SubResource("StandardMaterial3D_qtfam")
 size = Vector3(0.2, 0.4, 0.2)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ssqsm"]
+albedo_color = Color(0.11, 0.55, 0.139333, 1)
+emission_enabled = true
+emission = Color(1, 0.906667, 0.2, 1)
+emission_energy_multiplier = 200.0
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_erhrt"]
 shader = ExtResource("3_tf8gd")
 shader_parameter/Pixelation_Scale = 1.0
 shader_parameter/Panini = 0.25
 shader_parameter/Chromatic_Peripheral = 1.0
-shader_parameter/Chromatic_Aberrations = 2.0
+shader_parameter/Chromatic_Aberrations = 4.0
 shader_parameter/Chromatic_Darkening = 1.0
 shader_parameter/Blur_Amount = -2.0
 shader_parameter/Blur_Centered = 1.0
-shader_parameter/Bloom_Starts = 0.85
-shader_parameter/Bloom_Halation = 1.0
+shader_parameter/Bloom_Starts = 0.9
+shader_parameter/Bloom_Halation = 0.5
 shader_parameter/Bloom_Booster = 0.5
 shader_parameter/Shadows_Split = 0.3
 shader_parameter/Shadow_Color_Temp = 0.0
@@ -63,7 +66,9 @@ shader_parameter/Main_Contrast = 1.0
 shader_parameter/Main_Saturation = 1.0
 shader_parameter/Posterization = 0.0
 shader_parameter/Vignette = 0.3
+shader_parameter/Film_Grain = 0.3
 shader_parameter/Color_Filter = Color(1, 1, 1, 1)
+shader_parameter/Noise = ExtResource("4_kqp25")
 
 [sub_resource type="Animation" id="Animation_jpcfo"]
 resource_name = "Rotation"
@@ -100,8 +105,13 @@ mesh = SubResource("SphereMesh_ujbr1")
 skeleton = NodePath("../Camera3D")
 
 [node name="Cube_Reflection_Test" type="MeshInstance3D" parent="Ground_Reflection_Test"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.380574, 0.1, -1.34497)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.380574, 0.3, -1.34497)
 mesh = SubResource("BoxMesh_8obbj")
+
+[node name="Cube_Emission_Test" type="MeshInstance3D" parent="Ground_Reflection_Test"]
+transform = Transform3D(0.353116, 0, 2.98023e-08, 0, 0.24, 0, 0, 0, 0.718389, -0.380574, 0.3, -1.27313)
+mesh = SubResource("BoxMesh_8obbj")
+surface_material_override/0 = SubResource("StandardMaterial3D_ssqsm")
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(-0.906308, 0, 0.422619, 0, 1, 0, -0.422619, 0, -0.906308, 0, 1, 2)
