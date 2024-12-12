@@ -61,7 +61,7 @@ A heavy but reliable shader with tons of effects and features. It should run wel
 
 • Contrast
 
-![Godot 4 Color Correction and Screen Effects Visual Shaders](https://github.com/ArseniyMirniy/Godot-4-Free-Color-Correction-and-Screen-Effects-Visual-Shader/blob/main/Extras/Day_to_Night.jpg)
+![Godot 4 Color Correction and Screen Effects Visual Shaders](https://github.com/ArseniyMirniy/Godot-4-Free-Color-Correction-and-Screen-Effects-Visual-Shader/blob/main/Extras/Bistro.jpg)
 
 ## License
 
