@@ -49,6 +49,7 @@ A heavy but reliable shader with tons of effects and features. It should run wel
 
 • Posterization
 
+• Film Grain
 
 **MAIN + Shadows, Midtones, Highlights:**
 
@@ -59,14 +60,6 @@ A heavy but reliable shader with tons of effects and features. It should run wel
 • Brightness
 
 • Contrast
-
-**WIP:**
-
-• Lense Flares (Anamorphic)
-
-• Film Grain (Physically Correct)
-
-• Screen Warp Effects
 
 ![Godot 4 Color Correction and Screen Effects Visual Shaders](https://github.com/ArseniyMirniy/Godot-4-Free-Color-Correction-and-Screen-Effects-Visual-Shader/blob/main/Extras/Day_to_Night.jpg)
 
