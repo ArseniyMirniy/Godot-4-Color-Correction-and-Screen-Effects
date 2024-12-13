@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://cmykjg5k0ufa7"]
+[gd_scene load_steps=15 format=3 uid="uid://cmykjg5k0ufa7"]
 
 [ext_resource type="Environment" uid="uid://cw4y1r0ro6ix2" path="res://Materials and Shaders/Env.tres" id="1_m75cb"]
 [ext_resource type="CameraAttributesPhysical" uid="uid://bfs6kljywwebk" path="res://Scenes/Camera.tres" id="2_658e4"]
@@ -27,6 +27,13 @@ emission_enabled = true
 emission = Color(1, 0.906667, 0.2, 1)
 emission_energy_multiplier = 200.0
 
+[sub_resource type="Gradient" id="Gradient_y8d50"]
+offsets = PackedFloat32Array(0, 0.251366, 0.743169, 1)
+colors = PackedColorArray(0, 0, 0, 1, 0.029692, 0.180824, 0.264656, 1, 0.831205, 0.682604, 0.470863, 1, 1, 1, 1, 1)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_unj8b"]
+gradient = SubResource("Gradient_y8d50")
+
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_erhrt"]
 shader = ExtResource("3_tf8gd")
 shader_parameter/Pixelation_Scale = 1.0
@@ -45,20 +52,17 @@ shader_parameter/Shadow_Green_Tint = 0.0
 shader_parameter/Shadow_Brightness = 1.0
 shader_parameter/Shadow_Contrast = 1.0
 shader_parameter/Shadows_Saturation = 1.0
-shader_parameter/Shadows_Color_Filter = Color(1, 1, 1, 1)
 shader_parameter/Highlights_Split = 0.7
 shader_parameter/Mid_Color_Temp = 0.0
 shader_parameter/Mid_Green_Tint = 0.0
 shader_parameter/Mid_Brightness = 1.0
 shader_parameter/Mid_Contrast = 1.0
 shader_parameter/Mid_Saturation = 1.0
-shader_parameter/Mid_Color_Filter = Color(1, 1, 1, 1)
 shader_parameter/High_Color_Temp = 0.0
 shader_parameter/High_Green_Tint = 0.0
 shader_parameter/High_Brightness = 1.0
 shader_parameter/High_Contrast = 1.0
 shader_parameter/High_Saturation = 1.0
-shader_parameter/High_Color_Filter = Color(1, 1, 1, 1)
 shader_parameter/Main_Color_Temp = 4500.0
 shader_parameter/Main_Green_Tint = 0.0
 shader_parameter/Main_Brightness = 1.0
@@ -67,8 +71,9 @@ shader_parameter/Main_Saturation = 1.0
 shader_parameter/Posterization = 0.0
 shader_parameter/Vignette = 0.4
 shader_parameter/Film_Grain = 0.3
-shader_parameter/Color_Filter = Color(1, 1, 1, 1)
+shader_parameter/Filter_Strenght = 0.0
 shader_parameter/Noise = ExtResource("4_kqp25")
+shader_parameter/Color_Filter_Gradient = SubResource("GradientTexture1D_unj8b")
 
 [sub_resource type="Animation" id="Animation_jpcfo"]
 resource_name = "Rotation"
