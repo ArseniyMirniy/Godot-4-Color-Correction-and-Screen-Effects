@@ -36,9 +36,9 @@ shader_parameter/Chromatic_Aberrations = 4.0
 shader_parameter/Chromatic_Darkening = 1.0
 shader_parameter/Blur_Amount = -2.0
 shader_parameter/Blur_Centered = 1.0
-shader_parameter/Bloom_Starts = 0.95
-shader_parameter/Bloom_Halation = 0.5
-shader_parameter/Bloom_Booster = 0.5
+shader_parameter/Bloom_Starts = 0.9
+shader_parameter/Bloom_Halation = 0.0
+shader_parameter/Bloom_Booster = 1.0
 shader_parameter/Shadows_Split = 0.3
 shader_parameter/Shadow_Color_Temp = 0.0
 shader_parameter/Shadow_Green_Tint = 0.0
@@ -65,8 +65,8 @@ shader_parameter/Main_Brightness = 1.0
 shader_parameter/Main_Contrast = 1.0
 shader_parameter/Main_Saturation = 1.0
 shader_parameter/Posterization = 0.0
-shader_parameter/Vignette = 0.3
-shader_parameter/Film_Grain = 0.35
+shader_parameter/Vignette = 0.4
+shader_parameter/Film_Grain = 0.3
 shader_parameter/Color_Filter = Color(1, 1, 1, 1)
 shader_parameter/Noise = ExtResource("4_kqp25")
 
@@ -134,3 +134,4 @@ root_node = NodePath("../Camera3D")
 libraries = {
 "": SubResource("AnimationLibrary_qroxu")
 }
+autoplay = "Rotation"
