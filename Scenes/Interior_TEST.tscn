@@ -3,8 +3,8 @@
 [ext_resource type="Environment" uid="uid://cw4y1r0ro6ix2" path="res://Materials and Shaders/Env.tres" id="1_m75cb"]
 [ext_resource type="CameraAttributesPhysical" uid="uid://bfs6kljywwebk" path="res://Scenes/Camera.tres" id="2_658e4"]
 [ext_resource type="Shader" uid="uid://b5ptog53u0l54" path="res://Materials and Shaders/ScreenEffects_Ultimate.tres" id="3_tf8gd"]
-[ext_resource type="Texture2D" uid="uid://b0kh15i142txq" path="res://Textures/FILTER_TVGD.tres" id="4_1o64p"]
 [ext_resource type="Texture2D" uid="uid://bnn45uwfynrl5" path="res://Textures/noise_texture.tres" id="4_kqp25"]
+[ext_resource type="Texture2D" uid="uid://egkd6ewoqgna" path="res://Textures/FILTER_TW3.tres" id="4_wn4w5"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_04om4"]
 albedo_color = Color(0.097034, 0.148783, 0.10005, 1)
@@ -65,9 +65,9 @@ shader_parameter/Main_Saturation = 1.0
 shader_parameter/Posterization = 0.0
 shader_parameter/Vignette = 0.4
 shader_parameter/Film_Grain = 0.3
-shader_parameter/Filter_Strenght = 0.3
+shader_parameter/Filter_Strenght = 0.2
 shader_parameter/Noise = ExtResource("4_kqp25")
-shader_parameter/Color_Filter_Gradient = ExtResource("4_1o64p")
+shader_parameter/Color_Filter_Gradient = ExtResource("4_wn4w5")
 
 [sub_resource type="Animation" id="Animation_jpcfo"]
 resource_name = "Rotation"
