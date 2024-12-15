@@ -91,3 +91,5 @@ Unique files (shaders, scenes, and custom textures) are provided under Creative 
 
 The HDRi is [Klippad Sunrise 1](https://polyhaven.com/a/klippad_sunrise_1) by Greg Zaal from Poly Heaven, the license is CC0 for the image.
 You can learn visual shaders (in Unreal and Unity) from [Ben Cloward YouTube channel](https://www.youtube.com/watch?v=ipKQt0BxQSA&list=PL78XDi0TS4lGORvoEKCyw_6dO9tzlu6Ox).
+
+Several illustrations and the video were created in Godot 4 [Bistro Demo project](https://github.com/Jamsers/Bistro-Demo-Tweaked) by @Jamsers
