@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://bnn45uwfynrl5" path="res://Textures/noise_texture.tres" id="2_1fm3n"]
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_4g1ve"]
-size = Vector2(3369, 2803)
+size = Vector2(3369, 2604)
 title = "Sharpen and Blur"
 attached_nodes = PackedInt32Array(46, 117, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 94, 81, 365, 118, 99, 93, 386, 387, 388, 389, 484, 485, 564, 565)
 
@@ -27,7 +27,7 @@ default_value_enabled = true
 default_value = 1.0
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_6cmn6"]
-size = Vector2(2662, 1137)
+size = Vector2(2609, 924)
 title = "Pixelation and UV"
 attached_nodes = PackedInt32Array(379, 107, 375, 105, 102, 380, 377, 110, 113, 112, 114, 337, 338, 372, 378, 381, 385, 390, 391)
 
@@ -60,7 +60,7 @@ linked_parent_graph_frame = 10
 port_type = 3
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_m2f84"]
-size = Vector2(3429, 1559)
+size = Vector2(3429, 1344)
 title = "Chromatic Aberrations"
 attached_nodes = PackedInt32Array(2, 82, 122, 123, 124, 125, 136, 127, 128, 129, 130, 131, 132, 133, 134, 135, 364, 362, 363, 254, 255, 256, 257, 258, 361, 629, 630)
 
@@ -96,7 +96,7 @@ linked_parent_graph_frame = 12
 input_name = "screen_pixel_size"
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_8e1rt"]
-size = Vector2(1089, 748)
+size = Vector2(1089, 484)
 title = "Vignette"
 attached_nodes = PackedInt32Array(38, 42, 41, 15)
 
@@ -134,12 +134,12 @@ linked_parent_graph_frame = 12
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_v14n2"]
 linked_parent_graph_frame = 151
-size = Vector2(1249, 2623)
+size = Vector2(1249, 2424)
 title = "Split Levels (3 zones, 2 blends)"
 attached_nodes = PackedInt32Array(153, 152, 146, 147, 141, 150, 144, 161)
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_hn5ty"]
-size = Vector2(2669, 3528)
+size = Vector2(2669, 3124)
 title = "Bloom and Halation"
 attached_nodes = PackedInt32Array(451, 454, 436, 366, 538, 276, 435, 278, 598, 280, 447, 370, 369, 455, 393, 537, 395, 400, 397, 371, 444, 401, 402, 403, 404, 405, 466, 452, 408, 279, 410, 411, 412, 450, 414, 449, 416, 417, 418, 419, 420, 421, 464, 423, 446, 434, 426, 427, 428, 433, 430, 445, 441, 442, 443, 456, 457, 458, 459, 460, 461, 462, 463, 473, 476, 477, 478, 479, 480, 481, 482, 483, 544, 547, 542, 545, 546, 486, 491, 492, 493, 494, 536, 541, 540, 539, 543, 487, 488, 489, 490, 495, 496, 497, 498, 499, 500, 501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 520, 521, 522, 523, 524, 525, 526, 527, 528, 529, 530, 531, 532, 533, 534, 535)
 
@@ -175,7 +175,7 @@ linked_parent_graph_frame = 14
 op_type = 4
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_gib0j"]
-size = Vector2(7669, 3387)
+size = Vector2(7669, 3226)
 title = "Color Correction"
 attached_nodes = PackedInt32Array(14, 156, 158, 163, 178, 181, 186, 229, 228, 227)
 
@@ -201,7 +201,7 @@ default_value = 0.3
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_bfdkj"]
 linked_parent_graph_frame = 151
-size = Vector2(329, 787)
+size = Vector2(329, 584)
 title = "Re-assemble Levels"
 attached_nodes = PackedInt32Array(157, 160)
 
@@ -223,7 +223,7 @@ port_type = 3
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_xxoug"]
 linked_parent_graph_frame = 151
-size = Vector2(2169, 1088)
+size = Vector2(2169, 924)
 title = "Main Color Correcton"
 attached_nodes = PackedInt32Array(164, 165, 166, 167, 168, 169, 170, 171, 172, 175, 174, 233, 236, 627)
 
@@ -291,7 +291,7 @@ operator = 5
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_1mr57"]
 linked_parent_graph_frame = 151
-size = Vector2(2214, 1088)
+size = Vector2(2209, 684)
 title = "Midtones"
 attached_nodes = PackedInt32Array(176, 177, 179, 180, 310, 245, 294, 311, 309, 300, 301, 307)
 
@@ -317,7 +317,7 @@ default_value = 1.0
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_b1fib"]
 linked_parent_graph_frame = 151
-size = Vector2(1962, 1068)
+size = Vector2(1949, 664)
 title = "Shadows"
 attached_nodes = PackedInt32Array(182, 185, 184, 183, 214, 308, 244, 291, 306, 305, 304)
 
@@ -351,7 +351,7 @@ operator = 5
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_1cg8b"]
 linked_parent_graph_frame = 151
-size = Vector2(2049, 1088)
+size = Vector2(2049, 1030)
 title = "Highlights"
 attached_nodes = PackedInt32Array(188, 190, 189, 187, 311, 242, 243, 302, 303, 299)
 
@@ -509,19 +509,19 @@ default_value_enabled = true
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_crgfq"]
 linked_parent_graph_frame = 151
-size = Vector2(1629, 1088)
+size = Vector2(1629, 924)
 title = "Shadows CC"
 attached_nodes = PackedInt32Array(204, 195, 196, 201, 200, 194, 198, 197, 230, 237)
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_yehvg"]
 linked_parent_graph_frame = 151
-size = Vector2(1629, 1088)
+size = Vector2(1629, 924)
 title = "Midtones CC"
 attached_nodes = PackedInt32Array(212, 215, 206, 207, 211, 205, 209, 208, 231, 238)
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_tfnps"]
 linked_parent_graph_frame = 151
-size = Vector2(1629, 1088)
+size = Vector2(1629, 924)
 title = "Highlights CC"
 attached_nodes = PackedInt32Array(222, 226, 217, 218, 223, 216, 220, 219, 232, 239)
 
@@ -584,7 +584,7 @@ op_type = 4
 [sub_resource type="VisualShaderNodeReroute" id="VisualShaderNodeReroute_fn0o7"]
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_fvvt2"]
-size = Vector2(1149, 1088)
+size = Vector2(1149, 824)
 title = "Color Filter"
 attached_nodes = PackedInt32Array(625, 623, 624, 626, 628)
 
@@ -751,7 +751,7 @@ step = 0.01
 default_value_enabled = true
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_o68e6"]
-size = Vector2(2569, 888)
+size = Vector2(2569, 504)
 title = "Posterization"
 attached_nodes = PackedInt32Array(313, 325, 314, 312, 324, 622, 621)
 
@@ -1253,7 +1253,7 @@ linked_parent_graph_frame = 10
 constant = Vector2(2, 2)
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_1wxrc"]
-size = Vector2(1289, 888)
+size = Vector2(1289, 484)
 title = "Brightness, Contrast, Saturation"
 attached_nodes = PackedInt32Array(3, 4, 6, 7, 43, 45, 44)
 
@@ -1326,7 +1326,7 @@ operator = 2
 linked_parent_graph_frame = 140
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_au5yh"]
-size = Vector2(2909, 1072)
+size = Vector2(2909, 684)
 title = "Film Grain"
 attached_nodes = PackedInt32Array(600, 616, 603, 604, 605, 606, 607, 608, 609, 610, 619, 612, 631, 615, 620)
 
@@ -1571,7 +1571,7 @@ source = 1
 
 [sub_resource type="VisualShaderNodeFrame" id="VisualShaderNodeFrame_glgqq"]
 linked_parent_graph_frame = 10
-size = Vector2(689, 2623)
+size = Vector2(689, 2424)
 title = "Blur by 9 samples"
 attached_nodes = PackedInt32Array(98, 88, 89, 90, 91, 92, 95, 96, 97)
 
@@ -1647,16 +1647,16 @@ operator = 3
 code = "shader_type canvas_item;
 render_mode blend_mix;
 
-uniform float Pixelation_Scale : hint_range(1, 256, 0.10000000149012) = 1;
-uniform float Panini : hint_range(0, 1, 0.00999999977648) = 0;
+uniform float Pixelation_Scale : hint_range(1.0, 256.0, 0.10000000149012) = 1.0;
+uniform float Panini : hint_range(0.0, 1.0, 0.00999999977648) = 0.0;
 uniform sampler2D tex_frg_372 : source_color;
 uniform sampler2D screen_tex_frg_2 : hint_screen_texture;
 uniform sampler2D tex_frg_361;
-uniform float Chromatic_Peripheral : hint_range(0, 1, 0.00999999977648) = 0.89999997615814;
-uniform float Chromatic_Aberrations : hint_range(-20, 20, 0.10000000149012) = 0;
+uniform float Chromatic_Peripheral : hint_range(0.0, 1.0, 0.00999999977648) = 0.89999997615814;
+uniform float Chromatic_Aberrations : hint_range(-20.0, 20.0, 0.10000000149012) = 0.0;
 uniform sampler2D screen_tex_frg_125 : hint_screen_texture;
 uniform sampler2D screen_tex_frg_122 : hint_screen_texture;
-uniform float Chromatic_Darkening : hint_range(0, 1, 0.00999999977648) = 0.89999997615814;
+uniform float Chromatic_Darkening : hint_range(0.0, 1.0, 0.00999999977648) = 0.89999997615814;
 uniform sampler2D screen_tex_frg_79 : hint_screen_texture;
 uniform sampler2D screen_tex_frg_78 : hint_screen_texture;
 uniform sampler2D screen_tex_frg_77 : hint_screen_texture;
@@ -1668,9 +1668,9 @@ uniform sampler2D screen_tex_frg_82 : hint_screen_texture;
 uniform sampler2D screen_tex_frg_124 : hint_screen_texture;
 uniform sampler2D screen_tex_frg_123 : hint_screen_texture;
 uniform sampler2D screen_tex_frg_46 : hint_screen_texture;
-uniform float Blur_Amount : hint_range(-4, 10, 0.10000000149012) = 0;
+uniform float Blur_Amount : hint_range(-4.0, 10.0, 0.10000000149012) = 0.0;
 uniform sampler2D tex_frg_386;
-uniform float Blur_Centered : hint_range(0, 1, 0.10000000149012) = 0;
+uniform float Blur_Centered : hint_range(0.0, 1.0, 0.10000000149012) = 0.0;
 uniform sampler2D screen_tex_frg_434 : hint_screen_texture;
 uniform float Bloom_Starts : hint_range(0.80000001192093, 0.94999998807907, 0.00999999977648) = 0.89999997615814;
 uniform sampler2D screen_tex_frg_427 : hint_screen_texture;
@@ -1680,39 +1680,39 @@ uniform sampler2D screen_tex_frg_411 : hint_screen_texture;
 uniform sampler2D screen_tex_frg_405 : hint_screen_texture;
 uniform sampler2D screen_tex_frg_401 : hint_screen_texture;
 uniform sampler2D screen_tex_frg_370 : hint_screen_texture;
-uniform float Bloom_Halation : hint_range(0, 2, 0.00999999977648) = 0;
-uniform float Bloom_Booster : hint_range(0, 3, 0.00999999977648) = 0;
+uniform float Bloom_Halation : hint_range(0.0, 2.0, 0.00999999977648) = 0.0;
+uniform float Bloom_Booster : hint_range(0.0, 3.0, 0.00999999977648) = 0.0;
 uniform float Shadows_Split : hint_range(0.20000000298023, 0.40000000596046, 0.00999999977648) = 0.30000001192093;
-uniform float Shadow_Color_Temp : hint_range(-50, 50, 0.10000000149012) = 0;
-uniform float Shadow_Green_Tint : hint_range(-50, 50, 0.10000000149012) = 0;
-uniform float Shadow_Brightness : hint_range(0.75, 1.25, 0.00999999977648) = 1;
-uniform float Shadow_Contrast : hint_range(0.75, 1.25, 0.00999999977648) = 1;
-uniform float Shadows_Saturation : hint_range(0, 1.5, 0.10000000149012) = 1;
+uniform float Shadow_Color_Temp : hint_range(-50.0, 50.0, 0.10000000149012) = 0.0;
+uniform float Shadow_Green_Tint : hint_range(-50.0, 50.0, 0.10000000149012) = 0.0;
+uniform float Shadow_Brightness : hint_range(0.75, 1.25, 0.00999999977648) = 1.0;
+uniform float Shadow_Contrast : hint_range(0.75, 1.25, 0.00999999977648) = 1.0;
+uniform float Shadows_Saturation : hint_range(0.0, 1.5, 0.10000000149012) = 1.0;
 uniform float Highlights_Split : hint_range(0.60000002384186, 0.80000001192093, 0.00999999977648) = 0.69999998807907;
-uniform float Mid_Color_Temp : hint_range(-50, 50, 0.10000000149012) = 0;
-uniform float Mid_Green_Tint : hint_range(-50, 50, 0.10000000149012) = 0;
-uniform float Mid_Brightness : hint_range(0.75, 1.25, 0.00999999977648) = 1;
-uniform float Mid_Contrast : hint_range(0.75, 1.25, 0.00999999977648) = 1;
-uniform float Mid_Saturation : hint_range(0, 1.5, 0.10000000149012) = 1;
-uniform float High_Color_Temp : hint_range(-50, 50, 0.10000000149012) = 0;
-uniform float High_Green_Tint : hint_range(-50, 50, 0.10000000149012) = 0;
-uniform float High_Brightness : hint_range(0.75, 1.25, 0.00999999977648) = 1;
-uniform float High_Contrast : hint_range(0.75, 1.25, 0.00999999977648) = 1;
-uniform float High_Saturation : hint_range(0, 1.5, 0.10000000149012) = 1;
-uniform float Main_Color_Temp : hint_range(1000, 8000, 0.5) = 4500;
-uniform float Main_Green_Tint : hint_range(-100, 100, 0.10000000149012) = 0;
-uniform float Main_Brightness : hint_range(0, 2, 0.10000000149012) = 1;
-uniform float Main_Contrast : hint_range(0.10000000149012, 2, 0.10000000149012) = 1;
-uniform float Main_Saturation : hint_range(0, 2, 0.10000000149012) = 1;
+uniform float Mid_Color_Temp : hint_range(-50.0, 50.0, 0.10000000149012) = 0.0;
+uniform float Mid_Green_Tint : hint_range(-50.0, 50.0, 0.10000000149012) = 0.0;
+uniform float Mid_Brightness : hint_range(0.75, 1.25, 0.00999999977648) = 1.0;
+uniform float Mid_Contrast : hint_range(0.75, 1.25, 0.00999999977648) = 1.0;
+uniform float Mid_Saturation : hint_range(0.0, 1.5, 0.10000000149012) = 1.0;
+uniform float High_Color_Temp : hint_range(-50.0, 50.0, 0.10000000149012) = 0.0;
+uniform float High_Green_Tint : hint_range(-50.0, 50.0, 0.10000000149012) = 0.0;
+uniform float High_Brightness : hint_range(0.75, 1.25, 0.00999999977648) = 1.0;
+uniform float High_Contrast : hint_range(0.75, 1.25, 0.00999999977648) = 1.0;
+uniform float High_Saturation : hint_range(0.0, 1.5, 0.10000000149012) = 1.0;
+uniform float Main_Color_Temp : hint_range(1000.0, 8000.0, 0.5) = 4500.0;
+uniform float Main_Green_Tint : hint_range(-100.0, 100.0, 0.10000000149012) = 0.0;
+uniform float Main_Brightness : hint_range(0.0, 2.0, 0.10000000149012) = 1.0;
+uniform float Main_Contrast : hint_range(0.10000000149012, 2.0, 0.10000000149012) = 1.0;
+uniform float Main_Saturation : hint_range(0.0, 2.0, 0.10000000149012) = 1.0;
 uniform sampler2D tex_frg_622;
 uniform sampler2D tex_frg_621;
-uniform float Posterization : hint_range(0, 1, 0.00999999977648) = 0;
+uniform float Posterization : hint_range(0.0, 1.0, 0.00999999977648) = 0.0;
 uniform sampler2D tex_frg_15 : source_color;
-uniform float Vignette : hint_range(0, 2, 0.00999999977648) = 0;
+uniform float Vignette : hint_range(0.0, 2.0, 0.00999999977648) = 0.0;
 uniform sampler2D Noise : source_color, hint_default_transparent, filter_nearest_mipmap, repeat_enable;
-uniform float Film_Grain : hint_range(0, 2, 0.00999999977648) = 0;
+uniform float Film_Grain : hint_range(0.0, 2.0, 0.00999999977648) = 0.0;
 uniform sampler2D Color_Filter_Gradient : hint_default_transparent;
-uniform float Filter_Strenght : hint_range(0, 1, 0.00999999977648) = 0;
+uniform float Filter_Strenght : hint_range(0.0, 1.0, 0.00999999977648) = 0.0;
 
 
 
@@ -3159,7 +3159,6 @@ void fragment() {
 
 }
 "
-graph_offset = Vector2(4716.8, -177.593)
 mode = 1
 flags/light_only = false
 nodes/fragment/0/position = Vector2(16220, 180)
