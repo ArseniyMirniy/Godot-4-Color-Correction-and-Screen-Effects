@@ -12,7 +12,7 @@ There are two branches: ColorCorrection Mini and Screen Effects Ultimate. Mini o
 
 ## Installation
 1. Download two folders (Materials and Shaders, Textures) from GitHub;
-2. Source has never versions, but 1.0 Stable Release is also fine;
+2. Source has newer versions, but 1.0 Stable Release is also fine;
 3. Drop these folders into your Godot 4.3 project;
 4. Then you need a 2D or 3D scene with the Camera;
 5. Add CanvasLayer node as a child of the camera and disable mouse events in it;
@@ -21,7 +21,7 @@ There are two branches: ColorCorrection Mini and Screen Effects Ultimate. Mini o
 8. Add shader (MINI or ULTIMATE) to ColorRect Material slot;
 9. Now you can tune the values (but it’s only visible in runtime, not within the editor);
 10. Add Noise Texture (from Textures folder), if you want Film Grain.
-11. Same with Color Gradient Filter (4 examples can be found in Textures folder)
+11. Same with Colour Gradient Filter (4 examples can be found in Textures folder)
 12. Place your UI into another Canvas Layer (or it will be also affected).
 13. You can draw different parts into different Viewports (each with its own shader)
 
